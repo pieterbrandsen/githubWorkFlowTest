@@ -2,10 +2,12 @@ container:
   image: node:16.04
   cpu: 8
   memory: 10G
+  use_static_ip: "true"
 
 testServer_task:
   node_modules_cache:
     folder: node_modules
     fingerprint_script: cat package-lock.json
     populate_script: npm ci
+  script: wget -qO- ifconfig.co
   testServer_script: npm run start
