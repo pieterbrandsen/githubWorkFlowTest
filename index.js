@@ -1,8 +1,16 @@
-var colors = require('colors');
- 
-console.log('hello'.green); // outputs green text
-console.log('i like cake and pies'.underline.red) // outputs red underlined text
-console.log('inverse the color'.inverse); // inverses the color
-console.log('OMG Rainbows!'.rainbow); // rainbow
-console.log('Run the trap'.trap); // Drops the bass
- 
+// log every seconds elapsed since starting and exit after 10 hours
+function sleep(num) {
+	let now = new Date();
+	const stop = now.getTime() + num;
+	while(true) {
+		now = new Date();
+		if(now.getTime() > stop) return;
+	}
+}
+
+let i = 0;
+while (i< 10*60*60) {
+    sleep(1000)
+    i++;
+    console.log(i);
+}
