@@ -1,5 +1,5 @@
 container:
-  image: node:16.x
+  image: node:16.04
   cpu: 8
   memory: 10G
 
