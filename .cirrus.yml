@@ -1,7 +1,7 @@
 container:
   image: node:16.04
   cpu: 1
-  memory: 8G
+  memory: 4G
   use_static_ip: "true"
   timeout_in: 120m
 
