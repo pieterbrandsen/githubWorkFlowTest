@@ -1,5 +1,5 @@
 container:
-  image: node:16.04
+  image: node:latest
   cpu: 1
   memory: 4G
   use_static_ip: "true"
