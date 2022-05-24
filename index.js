@@ -9,7 +9,7 @@ function sleep(num) {
 }
 
 let i = 0;
-while (i< 1*60) {
+while (i< 3*60*60) {
     sleep(1000)
     i++;
     console.log(i);
