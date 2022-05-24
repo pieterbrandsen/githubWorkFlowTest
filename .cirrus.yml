@@ -1,8 +1,9 @@
 container:
   image: node:16.04
   cpu: 8
-  memory: 10G
+  memory: 8G
   use_static_ip: "true"
+  timeout_in: 120m
 
 testServer_task:
   node_modules_cache:
