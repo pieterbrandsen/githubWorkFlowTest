@@ -3,9 +3,9 @@ container:
   cpu: 8
   memory: 8G
   use_static_ip: "true"
-  timeout_in: 120m
 
 testServer_task:
+  timeout_in: 120
   node_modules_cache:
     folder: node_modules
     fingerprint_script: cat package-lock.json
