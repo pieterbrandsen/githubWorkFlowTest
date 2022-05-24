@@ -9,5 +9,5 @@ testServer_task:
     folder: node_modules
     fingerprint_script: cat package-lock.json
     populate_script: npm ci
-  script: wget -qO- ifconfig.co
+  ip_script: wget -qO- ifconfig.co
   testServer_script: npm run start
